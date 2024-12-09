@@ -117,8 +117,7 @@ df_agg = df_combined.groupby(['battery_id', 'test_id'], as_index=False).agg({
     'Re': 'mean',
     'Rct': 'mean',
     'Capacity': 'mean',
-    'ambient_temperature': 'first'
-})
+    'ambient_temperature': 'first'})
 print("df_agg shape:", df_agg.shape)
 print(df_agg.head())
 
@@ -131,14 +130,12 @@ for b_id in df_agg['battery_id'].unique():
         x=subset_rct['test_id'],
         y=subset_rct['Rct'],
         mode='lines',
-        name=f'Rct_{b_id}'
-    ))
+        name=f'Rct_{b_id}'))
 
 fig_rct.update_layout(
     title='Charge Transfer Resistance (Rct) vs. Test ID',
     xaxis_title='Test ID',
-    yaxis_title='Charge Transfer Resistance (Ohms)'
-)
+    yaxis_title='Charge Transfer Resistance (Ohms)')
 fig_rct.show()
 
 # 2. Plot Re AFTER dropping NaNs in Re.
@@ -151,12 +148,10 @@ for b_id in df_agg_re['battery_id'].unique():
         x=subset_re['test_id'],
         y=subset_re['Re'],
         mode='lines',
-        name=f'Re_{b_id}'
-    ))
+        name=f'Re_{b_id}'))
 
 fig_re.update_layout(
     title='Electrolyte Resistance (Re) vs. Test ID',
     xaxis_title='Test ID',
-    yaxis_title='Electrolyte Resistance (Ohms)'
-)
+    yaxis_title='Electrolyte Resistance (Ohms)')
 fig_re.show()
