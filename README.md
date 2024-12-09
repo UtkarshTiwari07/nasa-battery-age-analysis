@@ -40,13 +40,14 @@ The NASA Battery Dataset includes:
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.11
 - Pandas
 - Dask
 - Plotly
 
 ### Results
 Rct Plot: Shows all batteries across their test cycles, unaffected by Re filtering.
+
 Re Plot: Highlights only those cycles with valid Re values, offering a clean view of electrolyte resistance changes over time.
 
 ### Contact
