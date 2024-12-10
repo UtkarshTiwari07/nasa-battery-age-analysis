@@ -49,7 +49,14 @@ The NASA Battery Dataset includes:
 ### Results
 Rct Plot: Shows all batteries across their test cycles, unaffected by Re filtering.
 
+![Rct vs test id](https://github.com/user-attachments/assets/d7c726b0-a57c-41d0-bd4d-27ceae3343cf)
+
+
 Re Plot: Highlights only those cycles with valid Re values, offering a clean view of electrolyte resistance changes over time.
+
+![Re vs Test id](https://github.com/user-attachments/assets/7869a574-bc77-4f3c-99af-88688a6cba70)
+
+
 
 ### Contact
 For questions or suggestions, please open an issue or reach out at [utkarshtiwar89@gmail.com].
