@@ -27,6 +27,7 @@ As Li-ion batteries age, their internal parameters change, impacting performance
 ## Dataset
 
 The NASA Battery Dataset includes:
+- Kaggle dataset Link:- https://www.kaggle.com/datasets/patrickfleith/nasa-battery-dataset
 - **Measurement Files**: Containing voltage, current, temperature, and time at various test cycles.
 - **Metadata File**: Linking each measurement file to its test conditions, battery ID, Re, Rct, capacity, and ambient temperature.
 
